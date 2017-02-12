@@ -1,6 +1,15 @@
 # pbas
 Config file finder.
-## Finding Config File
+
+## Usage
+Get the library via
+
+```
+$ go get -u github.com/tkmru/pbas/...
+```
+
+### Finding Config File
+
 Examples:
 
 ```
