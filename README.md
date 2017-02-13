@@ -5,7 +5,7 @@ Config file finder.
 Get the library via
 
 ```
-$ go get -u github.com/tkmru/pbas/...
+$ go get -u github.com/tkmru/pbas
 ```
 
 ### Finding Config File
