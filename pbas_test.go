@@ -10,10 +10,12 @@ func TestAddAndFindConfig(t *testing.T) {
     t.Log("pbas.configName:", p.configName)
   }
 
-  AddConfigPath("./")
-  AddConfigPath("/etc/pbas")
+  configPaths := []string{"./", "/etc/pbas"}
+  for _, path := range configPaths {
+    AddConfigPath(path)
+  }
 
-  if len(p.configPaths) != 2 {
+  if len(p.configPaths) != len(configPaths) {
     t.Error("Length of pbas.configPaths isn't correct.")
     t.Log("pbas.configPaths:", p.configPaths)
   }
